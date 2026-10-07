@@ -1,0 +1,553 @@
+{
+  "method": "Offline inline rendering of local source files in Chromium; external navigation is restricted in this execution environment. Relative paths are separately verified by filesystem audit.",
+  "pages": [
+    "contact.html",
+    "index.html",
+    "members/cho.html",
+    "members/grad.html",
+    "members/undergrad.html",
+    "members.html",
+    "news.html",
+    "publications.html",
+    "research.html",
+    "seminars.html"
+  ],
+  "missing_assets": [
+    {
+      "page": "members/cho.html",
+      "file": "assets/images/members/cho.png"
+    },
+    {
+      "page": "members/grad.html",
+      "file": "assets/images/members/jeonil.png"
+    },
+    {
+      "page": "members/grad.html",
+      "file": "assets/images/members/seongyeol.jpg"
+    },
+    {
+      "page": "members/grad.html",
+      "file": "assets/images/members/dohyun.png"
+    },
+    {
+      "page": "members/grad.html",
+      "file": "assets/images/members/youngbok.png"
+    },
+    {
+      "page": "members/undergrad.html",
+      "file": "assets/images/members/heeji.png"
+    },
+    {
+      "page": "members/undergrad.html",
+      "file": "assets/images/members/jeongyun.jpg"
+    }
+  ],
+  "broken_anchors": [],
+  "duplicate_ids": {},
+  "old_site_dependencies": [],
+  "render_tests": [
+    {
+      "page": "contact.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/cho.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/grad.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/undergrad.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "news.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "publications.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "research.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "seminars.html",
+      "width": 1440,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "contact.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/cho.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/grad.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/undergrad.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "news.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "publications.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "research.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "seminars.html",
+      "width": 768,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "contact.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/cho.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/grad.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/undergrad.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "news.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "publications.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "research.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "seminars.html",
+      "width": 390,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "contact.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "index.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/cho.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/grad.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members/undergrad.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "members.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "news.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "publications.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "research.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    },
+    {
+      "page": "seminars.html",
+      "width": 320,
+      "overflow": false,
+      "nav": [
+        "Members",
+        "Publications",
+        "Research",
+        "Seminar",
+        "Contact"
+      ]
+    }
+  ],
+  "errors": [],
+  "international_count": 25,
+  "domestic_count": 6,
+  "domestic_numbers": [
+    "[4]",
+    "[3]",
+    "[2]",
+    "[1]",
+    "[1]",
+    "[1]"
+  ],
+  "home_news": 5,
+  "contact_link": "contact.html",
+  "all_news": 13,
+  "projects": 10,
+  "seminar_failure": "unavailable",
+  "seminar_fixture_status": "csv",
+  "seminar_fixture_rows": 2,
+  "seminar_quoted_title": 1,
+  "preview_members": 1,
+  "preview_professor": 1,
+  "preview_back": 1,
+  "hero_image_unchanged": true
+}

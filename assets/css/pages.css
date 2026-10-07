@@ -1,0 +1,95 @@
+/* Remaining subpages — the approved homepage/member fonts are reused. */
+.ase-content-page { padding-bottom:54px; color:var(--ase-ink); }
+.ase-page-heading { padding:46px 0 34px; margin-bottom:32px; border-bottom:1px solid var(--ase-line); }
+.ase-page-kicker { margin:0 0 11px; font-size:11px; font-weight:700; letter-spacing:1.5px; color:var(--ase-accent); text-transform:uppercase; }
+.ase-page-heading h1 { margin:0; font:700 42px/1.2 var(--font-head); }
+.ase-page-lead { max-width:75ch; margin:16px 0 0; color:var(--ase-muted); font-size:17px; line-height:1.7; }
+.ase-content-page h2 { font-family:var(--font-body); font-size:24px; line-height:1.4; }
+.ase-content-page a { color:var(--ase-accent); text-underline-offset:3px; }
+.ase-content-page .ase-button-primary { color:#fff; }
+.ase-content-page .ase-text-link { font-size:13px; text-decoration:none; }
+.ase-content-section { padding-top:26px; margin-bottom:35px; }
+.ase-content-section > h2 { margin:0 0 22px; }
+.ase-small-note { color:var(--ase-muted); font-size:13px; line-height:1.7; }
+.ase-research-summary { padding-block:0 25px; }
+.ase-research-summary .ase-research-item:first-child { padding-left:0; }
+.ase-project-list { display:grid; gap:16px; }
+.ase-project { border:1px solid var(--ase-line); padding:25px 28px; border-radius:6px; }
+.ase-project h3 { margin:0 0 12px; font-size:19px; font-family:var(--font-body); line-height:1.6; word-break:keep-all; }
+.ase-project p { margin:4px 0; font-size:15px; color:var(--ase-muted); line-height:1.6; }
+.ase-project .ase-project-period { color:var(--ase-accent); font-size:13px; font-weight:600; margin-top:10px; }
+.ase-content-page .ase-news-list { margin-bottom:20px; }
+.ase-content-page .ase-news-title { margin:0; }
+.ase-content-page .ase-news-item { grid-template-columns:160px minmax(0,1fr); }
+.ase-publications-toolbar { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:30px; }
+.ase-publication-tabs { display:inline-flex; background:#f6f3f5; padding:5px; gap:5px; border:1px solid var(--ase-line); border-radius:999px; }
+.ase-filter-button { font:600 15px/1.4 var(--font-body); border:0; padding:11px 21px; background:transparent; color:#666; border-radius:999px; cursor:pointer; }
+.ase-filter-button[aria-pressed="true"] { background:var(--ase-accent); color:#fff; }
+.ase-publication-year { margin-top:35px; }
+.ase-content-page .ase-publication-year-title { display:flex; align-items:center; gap:20px; font:700 28px/1.4 var(--font-head); }
+.ase-publication-year-title::after { content:""; height:1px; background:var(--ase-line); flex:1; }
+.ase-paper-list { list-style:none; padding:0; margin:0; display:grid; gap:20px; }
+.ase-paper { display:grid; grid-template-columns:120px minmax(0,1fr); gap:25px; padding:30px; border:1px solid var(--ase-line); border-radius:10px; }
+.ase-paper-meta { border-right:1px solid var(--ase-line); display:flex; flex-direction:column; align-items:flex-start; gap:18px; padding-right:22px; }
+.ase-paper-number { color:#8d8790; font:700 16px var(--font-head); }
+.ase-paper-type { color:var(--ase-accent); background:#f8ecef; padding:7px 10px; border-radius:999px; font-size:11px; font-weight:700; }
+.ase-paper-type.is-conference { color:#675425; background:#f4efdf; }
+.ase-paper-content { min-width:0; }
+.ase-paper-title { font:700 21px/1.45 var(--font-head); margin:0 0 20px; overflow-wrap:anywhere; }
+.ase-paper-details { display:grid; grid-template-columns:1fr 1.15fr; gap:27px; padding-top:18px; border-top:1px solid var(--ase-line); color:#55515a; font-size:14px; line-height:1.8; }
+.ase-detail-label { display:block; color:#918891; text-transform:uppercase; font-size:10px; font-weight:700; letter-spacing:1px; margin-bottom:6px; }
+.ase-paper-footer { display:flex; align-items:center; flex-wrap:wrap; gap:12px 18px; border-top:1px solid var(--ase-line); padding-top:15px; margin-top:20px; }
+.ase-paper-date { color:#3a363e; font-size:13px; font-weight:700; }
+.ase-paper-note { font-size:11px; color:#756e78; line-height:1.6; }
+.ase-paper-footer .ase-text-link { margin-left:auto; flex-shrink:0; }
+.ase-contact-grid { display:grid; grid-template-columns:1.12fr 1fr; gap:50px; }
+.ase-contact-grid h2 { margin-top:0; }
+.ase-contact-details { display:grid; grid-template-columns:75px 1fr; gap:18px 20px; font-size:15px; line-height:1.8; }
+.ase-contact-details dt { color:var(--ase-muted); font-weight:600; }
+.ase-contact-details dd { margin:0; overflow-wrap:anywhere; }
+.ase-contact-details a { text-decoration:none; }
+.ase-contact-join { background:#f8f4f6; border-left:3px solid var(--ase-accent); padding:28px; align-self:start; }
+.ase-contact-join h2 { line-height:1.6; }
+.ase-contact-join p { font-size:15px; line-height:1.9; word-break:keep-all; }
+.ase-contact-join .ase-button { margin-top:12px; font-size:15px; min-height:44px; }
+.ase-seminar-heading { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:20px; }
+.ase-seminar-heading h2 { margin:0; }
+.ase-seminar-filters { display:flex; gap:14px; }
+.ase-seminar-filters label { display:flex; flex-direction:column; gap:5px; font-size:11px; color:var(--ase-muted); }
+.ase-seminar-filters select { max-width:200px; padding:8px; font:inherit; font-size:13px; border:1px solid var(--ase-line); border-radius:4px; background:#fff; }
+.ase-seminar-table { width:100%; border-collapse:collapse; font-size:14px; line-height:1.6; }
+.ase-seminar-table th { text-align:left; font-size:12px; padding:15px 12px; background:#f7f4f6; }
+.ase-seminar-table td { padding:18px 12px; border-bottom:1px solid var(--ase-line); vertical-align:top; overflow-wrap:anywhere; }
+.ase-seminar-date { min-width:108px; color:var(--ase-muted); white-space:nowrap; }
+.ase-seminar-speaker { min-width:130px; font-weight:600; }
+.ase-seminar-venue { min-width:100px; }
+.ase-status-message { color:var(--ase-muted); font-size:14px; line-height:1.7; }
+.ase-status-message.is-error { padding:16px 20px; border-left:3px solid var(--ase-accent); background:#f8f4f6; }
+@media(max-width:760px){
+ .ase-page-heading { padding:32px 0 26px; margin-bottom:24px; }
+ .ase-page-heading h1 { font-size:34px; }
+ .ase-page-lead { font-size:15px; }
+ .ase-contact-grid { grid-template-columns:1fr; gap:25px; }
+ .ase-paper { grid-template-columns:1fr; gap:16px; padding:23px; }
+ .ase-paper-meta { flex-direction:row; align-items:center; justify-content:space-between; border:0; padding:0; }
+ .ase-paper-title { font-size:21px; }
+ .ase-paper-details { grid-template-columns:1fr; gap:17px; }
+ .ase-paper-note { flex-basis:100%; order:3; }
+ .ase-publications-toolbar { align-items:start; flex-direction:column; gap:8px; }
+ .ase-publications-toolbar p { margin:0; }
+ .ase-seminar-heading { flex-direction:column; align-items:start; gap:15px; }
+ .ase-seminar-table thead { display:none; }
+ .ase-seminar-table tbody { display:grid; gap:15px; }
+ .ase-seminar-table tr { display:flex; flex-direction:column; border:1px solid var(--ase-line); padding:18px; border-radius:6px; }
+ .ase-seminar-table td { display:block; border:0; min-width:0; padding:3px 0; }
+ .ase-seminar-date { font-size:12px; }
+ .ase-seminar-title { font-size:16px; margin-top:6px; }
+ .ase-seminar-venue { margin-top:8px; }
+ .ase-project { padding:21px; }
+ .ase-project h3 { font-size:17px; }
+}
+@media(max-width:700px){
+ .ase-content-page .ase-news-item { grid-template-columns:1fr; }
+ .ase-research-summary .ase-research-item { padding:24px 0; }
+ .ase-content-page .ase-research-note { margin-top:12px; }
+}

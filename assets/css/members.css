@@ -1,0 +1,123 @@
+/* ASELab subpages v2
+   Load AFTER the existing style.css and ase-home.css.
+   Shared header/footer plus updated member detail layouts.
+   The homepage and the original global style.css remain unchanged. */
+body.ase-subpage {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  --accent: var(--ase-accent, #8b1e3f);
+  --accent-weak: rgba(139, 30, 63, .10);
+}
+.ase-subpage > main.container { flex: 1 0 auto; }
+.ase-subpage > .ase-header,
+.ase-subpage > .ase-footer { flex-shrink: 0; }
+
+/* Supply the same small resets that the homepage scopes to .ase-home,
+   without resetting headings, paragraphs or links in the member content. */
+.ase-subpage [hidden] { display: none !important; }
+:where(.ase-subpage .ase-header, .ase-subpage .ase-footer) { color: var(--ase-ink); }
+:where(.ase-subpage .ase-header, .ase-subpage .ase-footer) a {
+  color: inherit;
+  text-decoration: none;
+}
+:where(.ase-subpage .ase-header, .ase-subpage .ase-footer) p { margin: 0; }
+.ase-subpage .ase-header { color: #fff; }
+.ase-subpage .ase-menu-button { font: inherit; }
+.ase-subpage a:focus-visible,
+.ase-subpage button:focus-visible {
+  outline: 3px solid var(--ase-accent-light);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+.ase-subpage .ase-nav > a[aria-current] { color: #fff; }
+.ase-subpage .ase-nav > a[aria-current]::after { right: 0; }
+.ase-subpage .ase-wordmark { white-space: nowrap; }
+.ase-subpage .ase-footer { margin-top: 30px; }
+
+/* Original member typography and portrait files are reused. */
+.ase-subpage .prof-info,
+.ase-subpage .member-card-vertical > div { min-width: 0; }
+.ase-subpage main .member-email { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .ase-subpage .professor-card,
+  .ase-subpage .member-card-vertical { flex-direction: column; gap: 24px; }
+  .ase-subpage .member-card-vertical img { max-width: 100%; }
+  .ase-subpage .prof-info h3 { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ase-subpage *, .ase-subpage *::before, .ase-subpage *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+@media print {
+  .ase-subpage { display: block; min-height: 0; }
+  .ase-subpage .ase-skip { display: none; }
+}
+
+/* MEMBER DETAILS — same fonts and restrained burgundy as the approved homepage.
+   These rules are scoped to .ase-member-page; other subpages are not restyled. */
+.ase-subpage .ase-member-page { color: var(--ase-ink); padding-bottom: 42px; }
+.ase-member-page h1, .ase-member-page h2, .ase-member-page p { margin: 0; }
+.ase-member-page a { color: var(--ase-accent); text-underline-offset: 3px; }
+.ase-member-page .ase-member-page-head { padding: 34px 0 0; margin-bottom: 30px; }
+.ase-member-page .ase-back { display: inline-flex; align-items: center; gap: 9px; color: var(--ase-muted); font-size: 14px; font-weight: 600; text-decoration: none; padding-block: 8px; }
+.ase-member-page .ase-back:hover { color: var(--ase-accent); }
+.ase-member-page .ase-page-kicker { margin: 22px 0 9px; color: var(--ase-accent); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
+.ase-member-page h1 { font-family: var(--font-head); font-size: 42px; font-weight: 700; line-height: 1.2; letter-spacing: normal; }
+.ase-member-page .ase-member-nav { display: flex; flex-wrap: wrap; gap: 7px 27px; border-bottom: 1px solid var(--ase-line); margin-top: 23px; }
+.ase-member-page .ase-member-nav a { position: relative; padding: 13px 0; color: var(--ase-muted); font-size: 14px; line-height: 1.5; font-weight: 600; text-decoration: none; }
+.ase-member-page .ase-member-nav a::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: transparent; }
+.ase-member-page .ase-member-nav a:hover { color: var(--ase-accent); }
+.ase-member-page .ase-member-nav a[aria-current='page'] { color: var(--ase-accent); }
+.ase-member-page .ase-member-nav a[aria-current='page']::after { background: var(--ase-accent); }
+.ase-member-page .ase-profile { display: grid; grid-template-columns: 224px minmax(0,1fr); gap: 36px; align-items: start; padding: 6px 0 35px; }
+.ase-member-page .ase-portrait { position: relative; margin: 0; width: 100%; aspect-ratio: 4 / 5; background: #f2f1f3; border: 1px solid var(--ase-line); border-radius: 4px; overflow: hidden; }
+.ase-member-page .ase-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.ase-member-page .ase-portrait-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; padding: 18px; text-align: center; color: #79707a; }
+.ase-member-page .ase-portrait-fallback > span:first-child { font-family: var(--font-head); font-size: 34px; font-weight: 400; color: #ab7e8b; }
+.ase-member-page .ase-portrait-fallback small { font-size: 12px; line-height: 1.6; font-weight: 400; }
+.ase-member-page .ase-profile-info { min-width: 0; }
+.ase-member-page .ase-profile-role { font-size: 12px; line-height: 1.6; font-weight: 700; color: var(--ase-accent); margin-bottom: 13px; }
+.ase-member-page .ase-profile-intro { font-size: 16px; line-height: 1.8; color: #444a55; }
+.ase-member-page .ase-profile-contact { margin: 22px 0 0; padding: 17px 0 0; border-top: 1px solid var(--ase-line); display: grid; grid-template-columns: 55px minmax(0,1fr); gap: 10px 17px; font-size: 14px; line-height: 1.65; }
+.ase-member-page .ase-profile-contact dt { color: var(--ase-muted); font-weight: 600; }
+.ase-member-page .ase-profile-contact dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.ase-member-page .ase-profile-contact a { text-decoration: none; }
+.ase-member-page .ase-profile-contact a:hover { text-decoration: underline; }
+.ase-member-page .ase-profile-section { display: grid; grid-template-columns: 224px minmax(0,1fr); gap: 36px; border-top: 1px solid var(--ase-line); padding-block: 28px; }
+.ase-member-page .ase-profile-section h2 { font-family: var(--font-body); font-size: 19px; font-weight: 700; line-height: 1.5; }
+.ase-member-page .ase-profile-section p { font-size: 16px; line-height: 1.85; color: #444a55; overflow-wrap: anywhere; }
+.ase-member-page .ase-people-list { display: grid; grid-template-columns: minmax(0,1fr); gap: 20px; }
+.ase-member-page .ase-person-card { display: grid; grid-template-columns: 166px minmax(0,1fr); gap: 30px; padding: 25px; background: #fff; border: 1px solid var(--ase-line); border-radius: 4px; }
+.ase-member-page .ase-person-info { min-width: 0; padding-block: 4px; align-self: center; }
+.ase-member-page .ase-person-info h2 { font-family: var(--font-body); font-size: 24px; font-weight: 700; line-height: 1.3; margin-bottom: 8px; }
+.ase-member-page .ase-person-status { color: var(--ase-accent); font-size: 14px; font-weight: 500; line-height: 1.6; margin-bottom: 15px; }
+.ase-member-page .ase-person-email { color: var(--ase-muted); font-size: 14px; line-height: 1.7; margin-top: 10px; overflow-wrap: anywhere; }
+.ase-member-page .ase-person-email a { text-decoration: none; }
+.ase-member-page .ase-person-email a:hover { text-decoration: underline; }
+.ase-member-page .ase-person-research { color: #444a55; font-size: 16px; line-height: 1.75; margin-top: 14px; padding-top: 13px; border-top: 1px solid var(--ase-line); }
+.ase-member-page .ase-person-research strong { display: block; color: var(--ase-ink); font-size: 12px; line-height: 1.6; margin-bottom: 5px; }
+@media (max-width: 700px) {
+  .ase-member-page .ase-member-page-head { padding-top: 22px; margin-bottom: 24px; }
+  .ase-member-page h1 { font-size: 32px; overflow-wrap: anywhere; }
+  .ase-member-page .ase-member-nav { gap: 0 18px; margin-top: 20px; }
+  .ase-member-page .ase-member-nav a { font-size: 13px; padding-block: 10px; }
+  .ase-member-page .ase-profile { grid-template-columns: minmax(0,1fr); gap: 25px; }
+  .ase-member-page .ase-profile > .ase-portrait { width: min(224px,100%); }
+  .ase-member-page .ase-profile-section { grid-template-columns: minmax(0,1fr); gap: 12px; padding-block: 24px; }
+  .ase-member-page .ase-person-card { grid-template-columns: 132px minmax(0,1fr); gap: 20px; padding: 20px; }
+  .ase-member-page .ase-person-info h2 { font-size: 22px; }
+}
+@media (max-width: 520px) {
+  .ase-member-page .ase-person-card { grid-template-columns: minmax(0,1fr); gap: 20px; }
+  .ase-member-page .ase-person-card .ase-portrait { width: 148px; }
+  .ase-member-page .ase-person-info { padding-block: 0; }
+  .ase-member-page .ase-person-email { font-size: 14px; }
+}
+@media print {
+  .ase-member-page .ase-member-nav, .ase-member-page .ase-back { display: none; }
+  .ase-member-page .ase-person-card, .ase-member-page .ase-profile { break-inside: avoid; }
+}
